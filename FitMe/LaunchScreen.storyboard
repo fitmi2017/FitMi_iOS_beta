@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="WM9-36-6YF">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="U3m-ht-OCf">
+            <objects>
+                <viewController id="WM9-36-6YF" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ONi-vg-Rgb"/>
+                        <viewControllerLayoutGuide type="bottom" id="v1S-4q-jIK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ByQ-hp-LC1">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_splash" translatesAutoresizingMaskIntoConstraints="NO" id="tHC-ba-tQM">
+                                <rect key="frame" x="200" y="246" width="200" height="108"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="108" id="0gg-W6-4kG"/>
+                                    <constraint firstAttribute="width" constant="200" id="qdQ-F0-lLB"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="tHC-ba-tQM" secondAttribute="centerX" id="WJ3-Db-8AG"/>
+                            <constraint firstAttribute="centerY" secondItem="tHC-ba-tQM" secondAttribute="centerY" id="gxI-Gm-dGP"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S50-DL-poj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="411" y="264"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_splash" width="200" height="108"/>
+    </resources>
+</document>

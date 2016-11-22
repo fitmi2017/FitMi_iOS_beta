@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="SinkinSans-200XLight.ttf">
+            <string>SinkinSans-200XLight</string>
+            <string>SinkinSans-200XLight</string>
+            <string>SinkinSans-200XLight</string>
+            <string>SinkinSans-200XLight</string>
+        </mutableArray>
+        <mutableArray key="SinkinSans-300Light.ttf">
+            <string>SinkinSans-300Light</string>
+            <string>SinkinSans-300Light</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="s1l-Eb-kwB" customClass="UserInfoTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="s1l-Eb-kwB" id="CPg-Q2-p8V">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select Gender" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qei-a1-AOf">
+                        <rect key="frame" x="8" y="5" width="304" height="20"/>
+                        <fontDescription key="fontDescription" name="SinkinSans-300Light" family="Sinkin Sans" pointSize="14"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Gender" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0BN-2k-bP7">
+                        <rect key="frame" x="8" y="29" width="304" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="mwV-r0-kfT"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SinkinSans-200XLight" family="Sinkin Sans" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done"/>
+                        <connections>
+                            <outlet property="delegate" destination="s1l-Eb-kwB" id="hHI-xB-ewW"/>
+                        </connections>
+                    </textField>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Q1-G7-hvP">
+                        <rect key="frame" x="8" y="29" width="304" height="43"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="43" id="8Pd-c2-er5"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SinkinSans-200XLight" family="Sinkin Sans" pointSize="15"/>
+                        <state key="normal">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="2Q1-G7-hvP" firstAttribute="leading" secondItem="CPg-Q2-p8V" secondAttribute="leading" constant="8" id="2JO-iH-9Wf"/>
+                    <constraint firstItem="0BN-2k-bP7" firstAttribute="leading" secondItem="CPg-Q2-p8V" secondAttribute="leading" constant="8" id="6XT-Sc-yYx"/>
+                    <constraint firstAttribute="bottom" secondItem="0BN-2k-bP7" secondAttribute="bottom" constant="10" id="8x9-0M-Hc4"/>
+                    <constraint firstAttribute="trailing" secondItem="2Q1-G7-hvP" secondAttribute="trailing" constant="8" id="KH3-pT-Sh3"/>
+                    <constraint firstAttribute="bottom" secondItem="2Q1-G7-hvP" secondAttribute="bottom" constant="7" id="RlJ-mn-x5t"/>
+                    <constraint firstAttribute="trailing" secondItem="0BN-2k-bP7" secondAttribute="trailing" constant="8" id="wsF-HE-BME"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnGenderVal" destination="2Q1-G7-hvP" id="nri-FB-1MF"/>
+                <outlet property="txtFldGenderVal" destination="0BN-2k-bP7" id="cMD-qI-NZA"/>
+            </connections>
+            <point key="canvasLocation" x="284" y="129"/>
+        </tableViewCell>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="SEd-Bc-uY1" customClass="UserInfoTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SEd-Bc-uY1" id="SIi-o7-XOs">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select Gender" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dDf-Df-vdb">
+                        <rect key="frame" x="8" y="5" width="304" height="30"/>
+                        <fontDescription key="fontDescription" name="SinkinSans-300Light" family="Sinkin Sans" pointSize="18"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Gender" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n8a-JJ-f26">
+                        <rect key="frame" x="8" y="40" width="304" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="Uw8-40-eJ6"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SinkinSans-200XLight" family="Sinkin Sans" pointSize="16"/>
+                        <textInputTraits key="textInputTraits"/>
+                        <connections>
+                            <outlet property="delegate" destination="SEd-Bc-uY1" id="Lrx-FB-KPk"/>
+                        </connections>
+                    </textField>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gvn-Db-BSp">
+                        <rect key="frame" x="8" y="40" width="304" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="uJf-F9-Jpv"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SinkinSans-200XLight" family="Sinkin Sans" pointSize="18"/>
+                        <state key="normal">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="n8a-JJ-f26" secondAttribute="bottom" constant="9" id="RLX-eD-6Ve"/>
+                    <constraint firstAttribute="trailing" secondItem="Gvn-Db-BSp" secondAttribute="trailing" constant="8" id="SuP-PI-qgL"/>
+                    <constraint firstItem="n8a-JJ-f26" firstAttribute="leading" secondItem="SIi-o7-XOs" secondAttribute="leading" constant="8" id="Zta-lN-pBc"/>
+                    <constraint firstAttribute="trailing" secondItem="n8a-JJ-f26" secondAttribute="trailing" constant="8" id="cfb-Ae-ch8"/>
+                    <constraint firstItem="Gvn-Db-BSp" firstAttribute="leading" secondItem="SIi-o7-XOs" secondAttribute="leading" constant="8" id="h74-1V-hTq"/>
+                    <constraint firstAttribute="bottom" secondItem="Gvn-Db-BSp" secondAttribute="bottom" constant="9" id="nds-tU-L2w"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnGenderVal" destination="Gvn-Db-BSp" id="aGb-pw-ejS"/>
+                <outlet property="txtFldGenderVal" destination="n8a-JJ-f26" id="Ewf-ia-sfe"/>
+            </connections>
+            <point key="canvasLocation" x="284" y="258"/>
+        </tableViewCell>
+    </objects>
+</document>

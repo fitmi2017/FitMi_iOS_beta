@@ -1,0 +1,29 @@
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+
+#import <EventKit/EventKit.h>
+#import <QuartzCore/QuartzCore.h>
+
+#import "AppDelegate.h"
+
+#import "appController.h"
+#define kPlayerViewDismissedNotification @"playerDismiss"
+#define APP_CTRL [appController sharedappController]
+#define  COLORRGB(R,G,B,A) [UIColor colorWithRed:R/255.0f green:G/255.0 blue:B/255.0f alpha:A]
+#define  TAB_COLOR [UIColor colorWithRed:41.0f/255.0f green:41.0f/255.0 blue:41.0f/255.0f alpha:1.0f]
+#define  TAB_SELECTED_COLOR [UIColor colorWithRed:209.0f/255.0f green:54.0f/255.0 blue:67.0f/255.0f alpha:1.0f]
+#define LATEST_SELECTED_DATE @"LATEST_SELECTED_DATE"
+#define SELECTED_SESSION @"SELECTED_SESSION"
+#define BREAKFAST @"Breakfast"
+#define LUNCH @"Lunch"
+#define DINNER @"Dinner"
+#define SNACK @"Snack"
+#endif

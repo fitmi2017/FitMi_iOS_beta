@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="SinkinSans-300Light.ttf">
+            <string>SinkinSans-300Light</string>
+            <string>SinkinSans-300Light</string>
+            <string>SinkinSans-300Light</string>
+            <string>SinkinSans-300Light</string>
+            <string>SinkinSans-300Light</string>
+            <string>SinkinSans-300Light</string>
+            <string>SinkinSans-300Light</string>
+            <string>SinkinSans-300Light</string>
+            <string>SinkinSans-300Light</string>
+            <string>SinkinSans-300Light</string>
+            <string>SinkinSans-300Light</string>
+            <string>SinkinSans-300Light</string>
+            <string>SinkinSans-300Light</string>
+            <string>SinkinSans-300Light</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="unitBp" rowHeight="164" id="KGk-i7-Jjw" customClass="UnitBPTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="167"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4uy-cB-Stq">
+                        <rect key="frame" x="133" y="59" width="100" height="30"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="N77-Y3-wfB"/>
+                            <constraint firstAttribute="height" constant="30" id="pzl-p2-34M"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SinkinSans-300Light" family="Sinkin Sans" pointSize="15"/>
+                        <state key="normal" title="kPa">
+                            <color key="titleColor" red="0.18823529410000001" green="0.64313725489999995" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ex5-2d-C1K">
+                        <rect key="frame" x="14" y="59" width="100" height="30"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="2zl-Hg-o7T"/>
+                            <constraint firstAttribute="height" constant="30" id="sDi-M0-2l8"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SinkinSans-300Light" family="Sinkin Sans" pointSize="15"/>
+                        <state key="normal" title="mmhg">
+                            <color key="titleColor" red="0.18823529410000001" green="0.64313725489999995" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blood Pressure" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jtf-tT-jD8">
+                        <rect key="frame" x="10" y="10" width="310" height="30"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="ONU-xd-3TW"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SinkinSans-300Light" family="Sinkin Sans" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ijd-Nq-1wb">
+                        <rect key="frame" x="54" y="109" width="100" height="30"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="DVp-ov-hgi"/>
+                            <constraint firstAttribute="width" constant="100" id="It2-nb-c3c"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SinkinSans-300Light" family="Sinkin Sans" pointSize="15"/>
+                        <state key="normal" title="AHA">
+                            <color key="titleColor" red="0.18823529410000001" green="0.64313725489999995" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="US" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k1i-Y3-Yhu">
+                        <rect key="frame" x="15" y="114" width="29" height="25"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="29" id="DGS-tB-OOV"/>
+                            <constraint firstAttribute="height" constant="25" id="IVj-Sn-Y4O"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SinkinSans-300Light" family="Sinkin Sans" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N0H-JO-aKC">
+                        <rect key="frame" x="212" y="109" width="100" height="30"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="Pnw-oM-4KA"/>
+                            <constraint firstAttribute="height" constant="30" id="ewL-Zp-hy5"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SinkinSans-300Light" family="Sinkin Sans" pointSize="15"/>
+                        <state key="normal" title="WHO">
+                            <color key="titleColor" red="0.18823529410000001" green="0.64313725489999995" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="acG-1k-TWZ">
+                        <rect key="frame" x="0.0" y="173" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="2gh-U2-G4W"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EU" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IQL-Y5-avr">
+                        <rect key="frame" x="175" y="113" width="29" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="9yg-c6-yhK"/>
+                            <constraint firstAttribute="width" constant="29" id="ita-y1-XF6"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SinkinSans-300Light" family="Sinkin Sans" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Ijd-Nq-1wb" firstAttribute="top" secondItem="Ex5-2d-C1K" secondAttribute="bottom" constant="20" id="1fs-r7-8hV"/>
+                    <constraint firstItem="4uy-cB-Stq" firstAttribute="top" secondItem="jtf-tT-jD8" secondAttribute="bottom" constant="19" id="Czi-DQ-Vwm"/>
+                    <constraint firstItem="Ijd-Nq-1wb" firstAttribute="leading" secondItem="k1i-Y3-Yhu" secondAttribute="trailing" constant="10" id="J5U-nb-Ylm"/>
+                    <constraint firstAttribute="trailing" secondItem="jtf-tT-jD8" secondAttribute="trailing" id="KlG-cg-xwe"/>
+                    <constraint firstItem="Ex5-2d-C1K" firstAttribute="top" secondItem="jtf-tT-jD8" secondAttribute="bottom" constant="19" id="OBZ-ed-fCR"/>
+                    <constraint firstAttribute="trailing" secondItem="acG-1k-TWZ" secondAttribute="trailing" id="RTg-c4-YuT"/>
+                    <constraint firstAttribute="bottom" secondItem="acG-1k-TWZ" secondAttribute="bottom" constant="-8" id="SqA-wG-X1K"/>
+                    <constraint firstItem="k1i-Y3-Yhu" firstAttribute="top" secondItem="Ex5-2d-C1K" secondAttribute="bottom" constant="25" id="TlT-uQ-VQe"/>
+                    <constraint firstItem="N0H-JO-aKC" firstAttribute="top" secondItem="4uy-cB-Stq" secondAttribute="bottom" constant="20" id="YeH-Mq-Ny5"/>
+                    <constraint firstItem="4uy-cB-Stq" firstAttribute="leading" secondItem="Ex5-2d-C1K" secondAttribute="trailing" constant="19" id="dXQ-EW-UjS"/>
+                    <constraint firstItem="jtf-tT-jD8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="pIa-gc-28m"/>
+                    <constraint firstItem="k1i-Y3-Yhu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="qj0-5q-c0i"/>
+                    <constraint firstItem="jtf-tT-jD8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="rWG-OE-nYQ"/>
+                    <constraint firstItem="Ex5-2d-C1K" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="14" id="t7C-zm-mrZ"/>
+                    <constraint firstItem="acG-1k-TWZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="tbb-Qt-3FF"/>
+                    <constraint firstItem="IQL-Y5-avr" firstAttribute="leading" secondItem="Ijd-Nq-1wb" secondAttribute="trailing" constant="21" id="tkP-lX-NcE"/>
+                    <constraint firstItem="IQL-Y5-avr" firstAttribute="top" secondItem="4uy-cB-Stq" secondAttribute="bottom" constant="24" id="xlM-RA-xs0"/>
+                    <constraint firstItem="N0H-JO-aKC" firstAttribute="leading" secondItem="IQL-Y5-avr" secondAttribute="trailing" constant="8" id="zVR-pd-MUV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btn_aha" destination="Ijd-Nq-1wb" id="Ogj-eZ-R4a"/>
+                <outlet property="btn_kpa" destination="4uy-cB-Stq" id="fDR-ta-J1e"/>
+                <outlet property="btn_mmhg" destination="Ex5-2d-C1K" id="RPd-ab-g31"/>
+                <outlet property="btn_who" destination="N0H-JO-aKC" id="cMu-JU-Lex"/>
+                <outlet property="lbl_Eu" destination="IQL-Y5-avr" id="kGc-dr-KYU"/>
+                <outlet property="lbl_us" destination="k1i-Y3-Yhu" id="Wll-cW-pU5"/>
+            </connections>
+            <point key="canvasLocation" x="239" y="118.5"/>
+        </tableViewCell>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="unitBp" rowHeight="164" id="Ous-xr-9lS" customClass="UnitBPTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="395" height="170"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ous-xr-9lS" id="MK8-7t-KFZ">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="heF-SN-RdH">
+                        <rect key="frame" x="184" y="59" width="150" height="44"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="FA0-M3-mDs"/>
+                            <constraint firstAttribute="width" constant="150" id="YrV-xw-TOt"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SinkinSans-300Light" family="Sinkin Sans" pointSize="18"/>
+                        <state key="normal" title="kPa">
+                            <color key="titleColor" red="0.18823529410000001" green="0.64313725489999995" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vgg-w4-7op">
+                        <rect key="frame" x="14" y="59" width="150" height="44"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="trz-Kd-b0m"/>
+                            <constraint firstAttribute="width" constant="150" id="vqZ-bf-WWH"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SinkinSans-300Light" family="Sinkin Sans" pointSize="18"/>
+                        <state key="normal" title="mmhg">
+                            <color key="titleColor" red="0.18823529410000001" green="0.64313725489999995" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blood Pressure" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="53n-1e-Le0">
+                        <rect key="frame" x="10" y="10" width="310" height="30"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="xgD-pP-eEX"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SinkinSans-300Light" family="Sinkin Sans" pointSize="20"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gK5-ak-xot">
+                        <rect key="frame" x="55" y="120" width="150" height="44"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="150" id="GHa-uJ-iMC"/>
+                            <constraint firstAttribute="height" constant="44" id="s67-bT-Ab6"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SinkinSans-300Light" family="Sinkin Sans" pointSize="20"/>
+                        <state key="normal" title="AHA">
+                            <color key="titleColor" red="0.18823529410000001" green="0.64313725489999995" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="US" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F9b-wl-uAy">
+                        <rect key="frame" x="15" y="120" width="40" height="44"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="nwy-Ee-q1K"/>
+                            <constraint firstAttribute="width" constant="40" id="rrQ-aK-Ufm"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SinkinSans-300Light" family="Sinkin Sans" pointSize="20"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d8M-gD-N1N">
+                        <rect key="frame" x="260" y="120" width="150" height="44"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="150" id="5Mw-9l-mXG"/>
+                            <constraint firstAttribute="height" constant="44" id="UQ6-p5-R3r"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SinkinSans-300Light" family="Sinkin Sans" pointSize="20"/>
+                        <state key="normal" title="WHO">
+                            <color key="titleColor" red="0.18823529410000001" green="0.64313725489999995" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nne-Rz-JID">
+                        <rect key="frame" x="0.0" y="173" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="RPW-HN-hxK"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EU" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s7J-XC-iOy">
+                        <rect key="frame" x="220" y="120" width="40" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="8aN-i7-oDn"/>
+                            <constraint firstAttribute="width" constant="40" id="yW5-dm-xOE"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SinkinSans-300Light" family="Sinkin Sans" pointSize="20"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="heF-SN-RdH" firstAttribute="leading" secondItem="vgg-w4-7op" secondAttribute="trailing" constant="20" id="4ib-d4-eHz"/>
+                    <constraint firstItem="d8M-gD-N1N" firstAttribute="top" secondItem="heF-SN-RdH" secondAttribute="bottom" constant="17" id="6HO-Lp-3Kf"/>
+                    <constraint firstItem="F9b-wl-uAy" firstAttribute="leading" secondItem="MK8-7t-KFZ" secondAttribute="leading" constant="15" id="8uP-2R-JPL"/>
+                    <constraint firstItem="d8M-gD-N1N" firstAttribute="leading" secondItem="s7J-XC-iOy" secondAttribute="trailing" id="DrF-CS-nm8"/>
+                    <constraint firstItem="vgg-w4-7op" firstAttribute="leading" secondItem="MK8-7t-KFZ" secondAttribute="leading" constant="14" id="LgM-oC-uSA"/>
+                    <constraint firstItem="F9b-wl-uAy" firstAttribute="top" secondItem="vgg-w4-7op" secondAttribute="bottom" constant="17" id="Omv-ew-p6u"/>
+                    <constraint firstAttribute="trailing" secondItem="nne-Rz-JID" secondAttribute="trailing" constant="75" id="Qnq-nS-skm"/>
+                    <constraint firstAttribute="trailing" secondItem="53n-1e-Le0" secondAttribute="trailing" constant="75" id="SbZ-iP-vxx"/>
+                    <constraint firstItem="gK5-ak-xot" firstAttribute="leading" secondItem="F9b-wl-uAy" secondAttribute="trailing" id="Sma-kI-VGm"/>
+                    <constraint firstItem="gK5-ak-xot" firstAttribute="top" secondItem="vgg-w4-7op" secondAttribute="bottom" constant="17" id="Tvz-lx-Jln"/>
+                    <constraint firstItem="heF-SN-RdH" firstAttribute="top" secondItem="53n-1e-Le0" secondAttribute="bottom" constant="19" id="U2X-kD-fAZ"/>
+                    <constraint firstItem="s7J-XC-iOy" firstAttribute="top" secondItem="heF-SN-RdH" secondAttribute="bottom" constant="17" id="VSa-ka-sNt"/>
+                    <constraint firstItem="s7J-XC-iOy" firstAttribute="leading" secondItem="gK5-ak-xot" secondAttribute="trailing" constant="15" id="Ytg-6X-fTH"/>
+                    <constraint firstItem="nne-Rz-JID" firstAttribute="leading" secondItem="MK8-7t-KFZ" secondAttribute="leading" id="d3S-nL-bgf"/>
+                    <constraint firstItem="vgg-w4-7op" firstAttribute="top" secondItem="53n-1e-Le0" secondAttribute="bottom" constant="19" id="q98-F8-vAj"/>
+                    <constraint firstAttribute="bottom" secondItem="nne-Rz-JID" secondAttribute="bottom" constant="-5" id="qor-wh-xDG"/>
+                    <constraint firstItem="53n-1e-Le0" firstAttribute="top" secondItem="MK8-7t-KFZ" secondAttribute="top" constant="10" id="umH-dA-da3"/>
+                    <constraint firstItem="53n-1e-Le0" firstAttribute="leading" secondItem="MK8-7t-KFZ" secondAttribute="leading" constant="10" id="yiF-Rc-yxv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btn_aha" destination="gK5-ak-xot" id="W9g-kR-3Tn"/>
+                <outlet property="btn_kpa" destination="heF-SN-RdH" id="umT-pn-sdn"/>
+                <outlet property="btn_mmhg" destination="vgg-w4-7op" id="647-pI-VHB"/>
+                <outlet property="btn_who" destination="d8M-gD-N1N" id="LWZ-xP-fh3"/>
+                <outlet property="lbl_Eu" destination="s7J-XC-iOy" id="Mj5-3E-0PU"/>
+                <outlet property="lbl_us" destination="F9b-wl-uAy" id="eb4-1z-KyX"/>
+            </connections>
+            <point key="canvasLocation" x="294.5" y="335.5"/>
+        </tableViewCell>
+    </objects>
+</document>

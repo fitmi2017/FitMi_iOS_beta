@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="SinkinSans-300Light.ttf">
+            <string>SinkinSans-300Light</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Oi2-wC-ocs" customClass="FavFoodMealTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Oi2-wC-ocs" id="9HD-lE-b9F">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Pa-9I-5K1">
+                        <rect key="frame" x="20" y="10" width="251" height="40"/>
+                        <fontDescription key="fontDescription" name="SinkinSans-300Light" family="Sinkin Sans" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZLg-7u-0xV">
+                        <rect key="frame" x="275" y="12" width="35" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="35" id="RdQ-JZ-IVh"/>
+                            <constraint firstAttribute="height" constant="35" id="yF4-oJ-4H5"/>
+                        </constraints>
+                        <state key="normal" image="green-star_outline.png">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ceG-Xh-gc1">
+                        <rect key="frame" x="0.0" y="58" width="320" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Svg-dE-C2f"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ZLg-7u-0xV" firstAttribute="leading" secondItem="2Pa-9I-5K1" secondAttribute="trailing" constant="4" id="4m2-LJ-NSQ"/>
+                    <constraint firstItem="2Pa-9I-5K1" firstAttribute="leading" secondItem="9HD-lE-b9F" secondAttribute="leading" constant="20" id="5Yp-ca-I3K"/>
+                    <constraint firstAttribute="trailing" secondItem="ceG-Xh-gc1" secondAttribute="trailing" id="JkQ-lR-HYx"/>
+                    <constraint firstItem="ceG-Xh-gc1" firstAttribute="leading" secondItem="9HD-lE-b9F" secondAttribute="leading" id="R6R-Xd-Bfh"/>
+                    <constraint firstItem="ZLg-7u-0xV" firstAttribute="top" secondItem="9HD-lE-b9F" secondAttribute="top" constant="12" id="Vwg-C5-sc3"/>
+                    <constraint firstAttribute="trailing" secondItem="ZLg-7u-0xV" secondAttribute="trailing" constant="10" id="WCe-nj-ooD"/>
+                    <constraint firstItem="2Pa-9I-5K1" firstAttribute="top" secondItem="9HD-lE-b9F" secondAttribute="top" constant="10" id="aOe-gF-Fia"/>
+                    <constraint firstAttribute="bottom" secondItem="ZLg-7u-0xV" secondAttribute="bottom" constant="12" id="gi6-Hk-rut"/>
+                    <constraint firstAttribute="bottom" secondItem="2Pa-9I-5K1" secondAttribute="bottom" constant="9" id="hgd-hf-be5"/>
+                    <constraint firstAttribute="bottom" secondItem="ceG-Xh-gc1" secondAttribute="bottom" id="uhc-kh-rA5"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnFav" destination="ZLg-7u-0xV" id="bZ6-Be-9SL"/>
+                <outlet property="lblSepararor" destination="ceG-Xh-gc1" id="fJl-2f-C0N"/>
+                <outlet property="lblTitle" destination="2Pa-9I-5K1" id="WTF-dc-0ER"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="green-star_outline.png" width="35" height="35"/>
+    </resources>
+</document>

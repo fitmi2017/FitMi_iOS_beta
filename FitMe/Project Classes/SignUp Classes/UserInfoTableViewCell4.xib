@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="SinkinSans-200XLight.ttf">
+            <string>SinkinSans-200XLight</string>
+            <string>SinkinSans-200XLight</string>
+            <string>SinkinSans-200XLight</string>
+            <string>SinkinSans-200XLight</string>
+            <string>SinkinSans-200XLight</string>
+            <string>SinkinSans-200XLight</string>
+        </mutableArray>
+        <mutableArray key="SinkinSans-300Light.ttf">
+            <string>SinkinSans-300Light</string>
+            <string>SinkinSans-300Light</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="FAe-h9-HWa" customClass="UserInfoTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FAe-h9-HWa" id="2aY-wP-AFt">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Weight" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QON-pg-jf1">
+                        <rect key="frame" x="8" y="5" width="304" height="20"/>
+                        <fontDescription key="fontDescription" name="SinkinSans-300Light" family="Sinkin Sans" pointSize="14"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="lbs" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lfE-tP-iQS">
+                        <rect key="frame" x="8" y="29" width="199" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="zKX-Me-qJ5"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SinkinSans-200XLight" family="Sinkin Sans" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numbersAndPunctuation" returnKeyType="done"/>
+                        <connections>
+                            <outlet property="delegate" destination="FAe-h9-HWa" id="RNP-EX-yi4"/>
+                        </connections>
+                    </textField>
+                    <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Unit" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3p1-mM-zAP">
+                        <rect key="frame" x="215" y="29" width="97" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="N1g-gI-Qj0"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SinkinSans-200XLight" family="Sinkin Sans" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                        <connections>
+                            <outlet property="delegate" destination="FAe-h9-HWa" id="5kN-lJ-3Fs"/>
+                        </connections>
+                    </textField>
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cWK-XE-M83">
+                        <rect key="frame" x="215" y="29" width="97" height="43"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="43" id="7lE-3K-olE"/>
+                            <constraint firstAttribute="width" constant="97" id="YZI-ee-mI1"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SinkinSans-200XLight" family="Sinkin Sans" pointSize="18"/>
+                        <state key="normal">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="3p1-mM-zAP" secondAttribute="bottom" constant="11" id="B3C-X3-GZc"/>
+                    <constraint firstItem="cWK-XE-M83" firstAttribute="leading" secondItem="lfE-tP-iQS" secondAttribute="trailing" constant="8" id="HtB-o3-kn5"/>
+                    <constraint firstItem="lfE-tP-iQS" firstAttribute="leading" secondItem="2aY-wP-AFt" secondAttribute="leading" constant="8" id="NM8-yQ-9em"/>
+                    <constraint firstAttribute="bottom" secondItem="cWK-XE-M83" secondAttribute="bottom" constant="8" id="Ym9-g1-Eqq"/>
+                    <constraint firstItem="3p1-mM-zAP" firstAttribute="leading" secondItem="lfE-tP-iQS" secondAttribute="trailing" constant="8" id="aSI-L6-rRe"/>
+                    <constraint firstAttribute="bottom" secondItem="lfE-tP-iQS" secondAttribute="bottom" constant="11" id="fBX-hE-buW"/>
+                    <constraint firstAttribute="trailing" secondItem="cWK-XE-M83" secondAttribute="trailing" constant="8" id="slP-VA-VfX"/>
+                    <constraint firstItem="cWK-XE-M83" firstAttribute="leading" secondItem="lfE-tP-iQS" secondAttribute="trailing" constant="8" id="yzM-yc-xNr"/>
+                    <constraint firstAttribute="trailing" secondItem="3p1-mM-zAP" secondAttribute="trailing" constant="8" id="z5S-7o-WnM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnWeightUnit" destination="cWK-XE-M83" id="MFs-Fa-lda"/>
+                <outlet property="txtFldWeight" destination="lfE-tP-iQS" id="ol9-5f-1vl"/>
+                <outlet property="txtFldWeightUnit" destination="3p1-mM-zAP" id="yxk-dX-9gn"/>
+            </connections>
+            <point key="canvasLocation" x="301" y="131"/>
+        </tableViewCell>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="lwE-Yy-qE8" customClass="UserInfoTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lwE-Yy-qE8" id="69K-MU-VP0">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Weight" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HwS-Po-1d9">
+                        <rect key="frame" x="8" y="5" width="304" height="30"/>
+                        <fontDescription key="fontDescription" name="SinkinSans-300Light" family="Sinkin Sans" pointSize="18"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Unit" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aSI-cL-iae">
+                        <rect key="frame" x="215" y="40" width="97" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="7Jp-Es-2JX"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SinkinSans-200XLight" family="Sinkin Sans" pointSize="18"/>
+                        <textInputTraits key="textInputTraits"/>
+                        <connections>
+                            <outlet property="delegate" destination="lwE-Yy-qE8" id="Mwi-QB-Yvs"/>
+                        </connections>
+                    </textField>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZYO-HJ-XvU">
+                        <rect key="frame" x="215" y="40" width="50" height="43"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="53R-Ae-dUe"/>
+                            <constraint firstAttribute="height" constant="43" id="vYb-FM-tzf"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SinkinSans-200XLight" family="Sinkin Sans" pointSize="18"/>
+                        <state key="normal">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="lbs" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VNT-pE-4XO">
+                        <rect key="frame" x="8" y="40" width="199" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="nhs-MG-93T"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SinkinSans-200XLight" family="Sinkin Sans" pointSize="18"/>
+                        <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                        <connections>
+                            <outlet property="delegate" destination="lwE-Yy-qE8" id="Hru-g0-HbB"/>
+                        </connections>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="ZYO-HJ-XvU" secondAttribute="bottom" constant="16" id="G40-W9-1je"/>
+                    <constraint firstAttribute="bottom" secondItem="aSI-cL-iae" secondAttribute="bottom" constant="9" id="HfI-dr-DLi"/>
+                    <constraint firstItem="ZYO-HJ-XvU" firstAttribute="leading" secondItem="VNT-pE-4XO" secondAttribute="trailing" constant="8" id="IVf-So-LE0"/>
+                    <constraint firstItem="aSI-cL-iae" firstAttribute="leading" secondItem="VNT-pE-4XO" secondAttribute="trailing" constant="8" id="Qe4-OS-Npa"/>
+                    <constraint firstItem="VNT-pE-4XO" firstAttribute="leading" secondItem="69K-MU-VP0" secondAttribute="leading" constant="8" id="W7u-X0-Qy9"/>
+                    <constraint firstAttribute="bottom" secondItem="VNT-pE-4XO" secondAttribute="bottom" constant="9" id="YPR-XN-Unr"/>
+                    <constraint firstAttribute="trailing" secondItem="ZYO-HJ-XvU" secondAttribute="trailing" constant="55" id="eXX-5f-ijZ"/>
+                    <constraint firstItem="ZYO-HJ-XvU" firstAttribute="leading" secondItem="VNT-pE-4XO" secondAttribute="trailing" constant="8" id="ee3-02-Nrd"/>
+                    <constraint firstAttribute="trailing" secondItem="aSI-cL-iae" secondAttribute="trailing" constant="8" id="wo2-pT-dcA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnWeightUnit" destination="ZYO-HJ-XvU" id="EhE-dM-7LV"/>
+                <outlet property="txtFldWeight" destination="VNT-pE-4XO" id="hSh-fo-C7d"/>
+                <outlet property="txtFldWeightUnit" destination="aSI-cL-iae" id="Su4-AO-b2E"/>
+            </connections>
+            <point key="canvasLocation" x="301" y="279"/>
+        </tableViewCell>
+    </objects>
+</document>

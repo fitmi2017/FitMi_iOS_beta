@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "60828c71-0f24-1e49-bf96-86561ba911bc++6984",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "60828c71-0f24-1e49-bf96-86561ba911bc++6984" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "60828c71-0f24-1e49-bf96-86561ba911bc++6984" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "D2BCDEB3-D359-4363-9A33-F32BBAE9BB3D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "60828c71-0f24-1e49-bf96-86561ba911bc++6984" : "FitMi_V1.0.3\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "FitMe",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "FitMi 2\/FitMe.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/192.168.1.104:8443\/svn\/FitMi",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "60828c71-0f24-1e49-bf96-86561ba911bc++6984"
+    }
+  ]
+}

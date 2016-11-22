@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="SinkinSans-200XLight.ttf">
+            <string>SinkinSans-200XLight</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="NIDropDownTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tYU-BN-eKs">
+                        <rect key="frame" x="3" y="13" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="rkh-yv-zjw"/>
+                            <constraint firstAttribute="width" constant="25" id="s8k-Jk-FJU"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3lv-UP-S3D">
+                        <rect key="frame" x="35" y="10" width="80" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="Mpb-FD-G1H"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SinkinSans-200XLight" family="Sinkin Sans" pointSize="15"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="3lv-UP-S3D" secondAttribute="bottom" constant="9" id="1jD-xr-NTr"/>
+                    <constraint firstItem="3lv-UP-S3D" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="8zk-aW-wZj"/>
+                    <constraint firstItem="tYU-BN-eKs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="3" id="Dl9-74-LP7"/>
+                    <constraint firstItem="tYU-BN-eKs" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="13" id="UbZ-YU-Sq3"/>
+                    <constraint firstAttribute="bottom" secondItem="tYU-BN-eKs" secondAttribute="bottom" constant="11" id="lhj-ym-adb"/>
+                    <constraint firstItem="3lv-UP-S3D" firstAttribute="leading" secondItem="tYU-BN-eKs" secondAttribute="trailing" constant="7" id="wK5-4F-aQb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imgVw" destination="tYU-BN-eKs" id="xgV-O0-yE9"/>
+                <outlet property="lblTitle" destination="3lv-UP-S3D" id="RDV-Bq-Wlq"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

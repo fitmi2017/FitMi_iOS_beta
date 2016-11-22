@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="SinkinSans-200XLight.ttf">
+            <string>SinkinSans-200XLight</string>
+        </mutableArray>
+        <mutableArray key="SinkinSans-300Light.ttf">
+            <string>SinkinSans-300Light</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="80" id="xbK-xH-wbE" customClass="ProfileTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="429" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xbK-xH-wbE" id="uXg-JB-0jg">
+                <rect key="frame" x="0.0" y="0.0" width="429" height="79"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cSi-p8-K7d">
+                        <rect key="frame" x="20" y="10" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="BVE-q9-cU7"/>
+                            <constraint firstAttribute="width" constant="60" id="IOY-kb-jk0"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daily Calorie Intake" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VXC-bs-ikd">
+                        <rect key="frame" x="99" y="40" width="274" height="20"/>
+                        <fontDescription key="fontDescription" name="SinkinSans-200XLight" family="Sinkin Sans" pointSize="14"/>
+                        <color key="textColor" red="0.73725490196078436" green="0.72156862745098038" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daily Calorie Intake" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jlN-sG-E7o">
+                        <rect key="frame" x="99" y="15" width="274" height="20"/>
+                        <fontDescription key="fontDescription" name="SinkinSans-300Light" family="Sinkin Sans" pointSize="15"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Skj-Sr-aZx">
+                        <rect key="frame" x="386" y="32" width="12" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="JMv-TV-zZJ"/>
+                            <constraint firstAttribute="width" constant="12" id="hW5-dA-KSe"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="arrowAcc">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="centerY" secondItem="Skj-Sr-aZx" secondAttribute="centerY" id="0l9-kK-NL3"/>
+                    <constraint firstItem="jlN-sG-E7o" firstAttribute="leading" secondItem="cSi-p8-K7d" secondAttribute="trailing" constant="19" id="0zW-Ml-aqv"/>
+                    <constraint firstAttribute="trailing" secondItem="Skj-Sr-aZx" secondAttribute="trailing" constant="31" id="6ZC-8S-4dK"/>
+                    <constraint firstItem="VXC-bs-ikd" firstAttribute="height" secondItem="jlN-sG-E7o" secondAttribute="height" id="Aau-08-h18"/>
+                    <constraint firstItem="jlN-sG-E7o" firstAttribute="top" secondItem="uXg-JB-0jg" secondAttribute="top" constant="15" id="Dsk-vj-ZY1"/>
+                    <constraint firstAttribute="bottom" secondItem="VXC-bs-ikd" secondAttribute="bottom" constant="19" id="H54-rM-M7D"/>
+                    <constraint firstItem="cSi-p8-K7d" firstAttribute="leading" secondItem="uXg-JB-0jg" secondAttribute="leading" constant="20" id="Pb3-16-VXl"/>
+                    <constraint firstItem="VXC-bs-ikd" firstAttribute="top" secondItem="jlN-sG-E7o" secondAttribute="bottom" constant="5" id="SLv-XR-vvd"/>
+                    <constraint firstItem="Skj-Sr-aZx" firstAttribute="leading" secondItem="VXC-bs-ikd" secondAttribute="trailing" constant="13" id="aVl-Kc-n8p"/>
+                    <constraint firstItem="VXC-bs-ikd" firstAttribute="leading" secondItem="cSi-p8-K7d" secondAttribute="trailing" constant="19" id="esP-hi-COA"/>
+                    <constraint firstAttribute="centerY" secondItem="cSi-p8-K7d" secondAttribute="centerY" id="mpJ-4V-IdH"/>
+                    <constraint firstAttribute="trailing" secondItem="jlN-sG-E7o" secondAttribute="trailing" constant="56" id="yFK-kf-0Ho"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnArrow" destination="Skj-Sr-aZx" id="XuS-dy-IV5"/>
+                <outlet property="imgVw" destination="cSi-p8-K7d" id="5n3-lF-yI6"/>
+                <outlet property="lblDeviceNm" destination="jlN-sG-E7o" id="wmJ-hQ-Hnn"/>
+                <outlet property="lblDeviceStatus" destination="VXC-bs-ikd" id="fhT-T7-Zeb"/>
+            </connections>
+            <point key="canvasLocation" x="363.5" y="160"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrowAcc" width="12" height="17"/>
+    </resources>
+</document>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="SinkinSans-200XLight.ttf">
+            <string>SinkinSans-200XLight</string>
+            <string>SinkinSans-200XLight</string>
+        </mutableArray>
+        <mutableArray key="SinkinSans-300Light.ttf">
+            <string>SinkinSans-300Light</string>
+            <string>SinkinSans-300Light</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="tMP-3C-xI4" customClass="UserInfoTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tMP-3C-xI4" id="HKf-yz-yJU">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Calculate" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jR3-K9-u0a">
+                        <constraints>
+                            <constraint firstAttribute="height" id="bGf-RD-uCD"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SinkinSans-200XLight" family="Sinkin Sans" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numbersAndPunctuation" returnKeyType="done"/>
+                        <connections>
+                            <outlet property="delegate" destination="tMP-3C-xI4" id="gVb-nf-aZ5"/>
+                        </connections>
+                    </textField>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Daily Calorie Intake" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T2F-7s-B0R">
+                        <rect key="frame" x="8" y="11" width="304" height="20"/>
+                        <fontDescription key="fontDescription" name="SinkinSans-300Light" family="Sinkin Sans" pointSize="14"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="jR3-K9-u0a" firstAttribute="leading" secondItem="HKf-yz-yJU" secondAttribute="leading" constant="8" id="aEf-g6-mkP"/>
+                    <constraint firstAttribute="trailing" secondItem="jR3-K9-u0a" secondAttribute="trailing" constant="8" id="m66-ys-bCb"/>
+                    <constraint firstAttribute="bottom" secondItem="jR3-K9-u0a" secondAttribute="bottom" constant="51" id="wB8-h7-RVL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="txtFldCalIntake" destination="jR3-K9-u0a" id="iv9-dF-4NK"/>
+            </connections>
+        </tableViewCell>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="ZQa-t1-oQn" customClass="UserInfoTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZQa-t1-oQn" id="9d5-Iz-SXO">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Calculate" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qg2-uv-ry1">
+                        <constraints>
+                            <constraint firstAttribute="height" id="Vvk-PO-Ap6"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SinkinSans-200XLight" family="Sinkin Sans" pointSize="18"/>
+                        <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                        <connections>
+                            <outlet property="delegate" destination="ZQa-t1-oQn" id="vbn-Na-qnm"/>
+                        </connections>
+                    </textField>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Daily Calorie Intake" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pZz-d9-hg6">
+                        <rect key="frame" x="8" y="65" width="304" height="30"/>
+                        <fontDescription key="fontDescription" name="SinkinSans-300Light" family="Sinkin Sans" pointSize="18"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Qg2-uv-ry1" secondAttribute="bottom" constant="59" id="by2-WR-DEY"/>
+                    <constraint firstAttribute="trailing" secondItem="Qg2-uv-ry1" secondAttribute="trailing" constant="8" id="gik-re-Qty"/>
+                    <constraint firstItem="Qg2-uv-ry1" firstAttribute="leading" secondItem="9d5-Iz-SXO" secondAttribute="leading" constant="8" id="n3h-zj-EZ1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="txtFldCalIntake" destination="Qg2-uv-ry1" id="aWf-ir-jrq"/>
+            </connections>
+            <point key="canvasLocation" x="306" y="367"/>
+        </tableViewCell>
+    </objects>
+</document>
